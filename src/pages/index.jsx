@@ -17,7 +17,10 @@ export default function Home() {
         <title>Jumpin</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="Experience a smarter way to commute with our cab-sharing app. Join
+              a community of riders, save money, and reduce your carbon
+              footprint—all while getting where you need to go, faster and
+              safer."
         />
       </Head>
       {/* <Header /> */}

@@ -55,7 +55,7 @@ const DeleteAccountForm = () => {
         <div className="mb-4">
           <label
             htmlFor="reason"
-            className="mb-2 block text-sm font-semibold text-gray-700"
+            className="block py-3 text-sm font-semibold text-gray-900"
           >
             Why do you want to delete your account? (Optional)
           </label>
@@ -73,7 +73,7 @@ const DeleteAccountForm = () => {
           <input
             type="checkbox"
             id="confirm-deletion"
-            className="mr-2"
+            className="mr-2 text-black"
             required
           />
           <label htmlFor="confirm-deletion" className="text-sm text-gray-700">
@@ -83,7 +83,7 @@ const DeleteAccountForm = () => {
 
         <button
           type="submit"
-          className="w-full rounded-lg bg-red-600 py-2 px-4 text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+          className="w-full rounded-lg bg-black py-2 px-4 text-white hover:bg-zinc-700 focus:outline-none focus:ring-2"
         >
           Delete My Account
         </button>
