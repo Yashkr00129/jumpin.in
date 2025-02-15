@@ -49,7 +49,7 @@ export function Footer() {
             <div>
               <p className="text-center md:text-left">
                 <span className="font-bold">Email: </span>
-                <a className="text-[#28a745]" href="support@jumpin.com">
+                <a className="text-[#3b5998]" href="support@jumpin.com">
                   customercare@jumpin.in
                 </a>
               </p>
@@ -130,7 +130,10 @@ export function Footer() {
           </div> */}
           <p className="mt-6 text-sm text-gray-500 md:mt-0">
             All right reserved &copy; 2025 Jumpin -{' '}
-            <Link className="duration-200 hover:underline" href="">
+            <Link
+              className="duration-200 hover:underline"
+              href="/terms-and-conditions"
+            >
               Terms & Conditions
             </Link>{' '}
             and{' '}

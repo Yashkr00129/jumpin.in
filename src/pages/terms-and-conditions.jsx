@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer'
 function TermsAndConditionsPage(props) {
   return (
     <>
-      <div className="p-16">
+      <div className="p-4 md:p-16">
         <div data-custom-class="body">
           <div align="center" style={{ textAlign: 'left' }}>
             <div
