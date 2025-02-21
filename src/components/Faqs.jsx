@@ -10,7 +10,7 @@ import ReactLoading from 'react-loading'
 export function Faqs() {
   const [faqs, setFaqs] = useState([])
   async function getFaqs() {
-    const res = await axios.get('/api/app-faq')
+    const res = await axios.get('https://api.jumpin.in/api/app-faq')
     const formattedFaqs = transformFAQs(res.data)
     setFaqs(formattedFaqs)
   }
