@@ -33,6 +33,8 @@ export default function Home() {
           interval={3000}
           infiniteLoop={true}
           emulateTouch={true}
+          showStatus={false}
+          showIndicators={false}
         >
           <Hero
             title={'Share Your Ride, Save Your Time'}
