@@ -25,7 +25,13 @@ export default function Home() {
       </Head>
       {/* <Header /> */}
       <main>
-        <Hero />
+        <Hero
+          title={'Share Your Ride, Save Your Time'}
+          description={
+            'Experience a smarter way to commute with our cab-sharing app. Join a community of riders, save money, and reduce your carbon footprint—all while getting where you need to go, faster and safer.'
+          }
+          imageUrl={'home-page-image.png'}
+        />
         {/* <PrimaryFeatures /> */}
         <SecondaryFeatures />
         {/* <CallToAction /> */}

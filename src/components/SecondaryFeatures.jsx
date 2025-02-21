@@ -19,18 +19,21 @@ const features = [
     icon: DeviceClockIcon,
   },
   {
-    name: 'Secure Payments',
-    description: 'Pay seamlessly and securely within the app.',
+    name: 'Multi-Stop Journeys',
+    description:
+      'Easily add multiple locations to your route when creating a journey for a more flexible ride experience.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Real-Time Tracking',
-    description: 'Track your ride in real-time for peace of mind.',
+    name: 'Verified Riders',
+    description:
+      'Travel with confidence knowing that all users are verified, ensuring a safe and trustworthy experience.',
     icon: DeviceLockIcon,
   },
   {
-    name: '24/7 Support',
-    description: 'We’re here to assist you anytime you need help.',
+    name: 'Instant Ride Updates',
+    description:
+      'Stay informed with email notifications for ride updates, ensuring you never miss important details.',
     icon: DeviceChartIcon,
   },
 ]

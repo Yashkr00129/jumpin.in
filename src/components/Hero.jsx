@@ -48,8 +48,8 @@ function BackgroundIllustration(props) {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#28a745" />
-            <stop offset="1" stopColor="#28a745" stopOpacity="0" />
+            <stop stopColor="#4267b3" />
+            <stop offset="1" stopColor="#4267b3" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -78,8 +78,8 @@ function BackgroundIllustration(props) {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#28a745" />
-            <stop offset="1" stopColor="#28a745" stopOpacity="0" />
+            <stop stopColor="#4267b3" />
+            <stop offset="1" stopColor="#4267b3" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -179,8 +179,8 @@ function Chart({
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
         <linearGradient id={`${id}-gradient`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#28a745" />
-          <stop offset="100%" stopColor="#28a745" stopOpacity="0" />
+          <stop offset="0%" stopColor="#4267b3" />
+          <stop offset="100%" stopColor="#4267b3" stopOpacity="0" />
         </linearGradient>
       </defs>
       {[...Array(gridLines - 1).keys()].map((index) => (
@@ -212,7 +212,7 @@ function Chart({
         initial={{ pathLength: 0, opacity: 0 }}
         transition={{ duration: 1 }}
         {...(isInView
-          ? { stroke: '#28a745', animate: { pathLength: 1, opacity: 1 } }
+          ? { stroke: '#4267b3', animate: { pathLength: 1, opacity: 1 } }
           : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
@@ -230,7 +230,7 @@ function Chart({
             y1={points[activePointIndex].y}
             x2={totalWidth}
             y2={points[activePointIndex].y}
-            stroke="#28a745"
+            stroke="#4267b3"
             strokeDasharray="1 3"
           />
           <circle
@@ -239,7 +239,7 @@ function Chart({
             cy={points[activePointIndex].y}
             fill="#fff"
             strokeWidth="2"
-            stroke="#28a745"
+            stroke="#4267b3"
           />
         </>
       )}
@@ -265,7 +265,7 @@ function AppDemo() {
             <span className="border-r-2 border-gray-400 pr-2">Returns</span>
             <span className="sm:px-2">10%</span>
             <span className="sm:px-2">25%</span>
-            <span className="font-bold text-[#28a745] sm:px-2">50%</span>
+            <span className="font-bold text-[#4267b3] sm:px-2">50%</span>
             <span className="sm:px-2">100%</span>
           </div>
           <div className="mt-1 flex justify-between gap-2 border-t border-gray-200 py-1">
@@ -277,7 +277,7 @@ function AppDemo() {
               <span>FT9ja</span>
               <span className="mt-[-6px]">Classic</span>
             </span>
-            <span className="flex flex-col text-center text-sm font-bold text-[#28a745] sm:px-2">
+            <span className="flex flex-col text-center text-sm font-bold text-[#4267b3] sm:px-2">
               <span>FT9ja</span>
               <span className="mt-[-6px]">Challenge</span>
             </span>
@@ -293,7 +293,7 @@ function AppDemo() {
               <span className="my-[-6px]">Trade with</span>
               <span>$10,000</span>
             </div>
-            <div className="flex flex-col px-[1px] text-center text-sm font-bold text-[#28a745] sm:px-2">
+            <div className="flex flex-col px-[1px] text-center text-sm font-bold text-[#4267b3] sm:px-2">
               <span>$143</span>
               <span className="my-[-6px]">Trade with</span>
               <span>$25,000</span>
@@ -302,17 +302,17 @@ function AppDemo() {
           <div className="mt-1 flex items-end justify-between gap-2 border-t border-gray-200 pt-1">
             <div className="flex flex-col items-center pl-4">
               <p className="pb-2 text-center font-bold">$71.5</p>
-              <span className="h-12 w-14 bg-[#28a745]"></span>
+              <span className="h-12 w-14 bg-[#4267b3]"></span>
             </div>
             <div className="flex flex-col justify-between">
-              <p className="flex flex-col py-10 text-center font-bold text-[#28a745]">
+              <p className="flex flex-col py-10 text-center font-bold text-[#4267b3]">
                 <span>140X more</span>{' '}
                 <span className="my-[-6px]">returns</span>
               </p>
             </div>
             <div className="flex flex-col items-center pr-4">
               <p className="pb-2 text-center font-bold">$10,000</p>
-              <span className="h-[120px] w-14 bg-[#28a745]"></span>
+              <span className="h-[120px] w-14 bg-[#4267b3]"></span>
             </div>
           </div>
           <div className="mt-2 flex justify-between">
@@ -347,21 +347,16 @@ const Animations = {
   },
 }
 
-export function Hero() {
+export function Hero({ title, description, imageUrl }) {
   return (
     <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Share Your Ride, Save Your Time
+              {title}
             </h1>
-            <p className="mt-6 text-lg text-gray-600">
-              Experience a smarter way to commute with our cab-sharing app. Join
-              a community of riders, save money, and reduce your carbon
-              footprint—all while getting where you need to go, faster and
-              safer.
-            </p>
+            <p className="mt-6 text-lg text-gray-600">{description}</p>
             {/* <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-4 lg:justify-start">
               <Link href="https://temp-app-pockettailwind.herokuapp.com/#pricing">
                 <a className="rounded-md border-[1px] border-black bg-black py-2 px-9 text-white duration-300 hover:bg-white hover:text-black">
@@ -389,11 +384,7 @@ export function Hero() {
               className="-mx-4 h-[480px] px-2 pb-10 sm:h-[440px] lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-[510px] lg:px-0 lg:pt-6 xl:-bottom-32"
             >
               <PhoneFrame className="mx-auto max-w-[366px]" priority>
-                <img
-                  src={'home-page-image.png'}
-                  alt="phone"
-                  className="absolute mx-auto"
-                />
+                <img src={imageUrl} alt="phone" className="absolute mx-auto" />
               </PhoneFrame>
             </motion.div>
           </div>
